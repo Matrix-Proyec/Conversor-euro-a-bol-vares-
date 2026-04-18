@@ -187,83 +187,7 @@
       .currency-label::after {
         display: none;
       }
-    }
     
-    
-    
-    
-    
-    /* Estilos generales para el banner */
-    #banner-aviso {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.6); /* fondo negro semi-transparente */
-      color: white;
-      padding: 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-      
-      
-      
-      max-width: 700px;
-      width: 90%;
-      z-index: 9999;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      border: 2px solid white;
-      user-select: none;
-    }
-
-    /* Texto con borde negro para mejor legibilidad */
-    #banner-aviso p {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: white;
-      text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-      margin: 1rem 0 0 0;
-    }
-
- 
-
-    /* Icono de aviso (SVG) */
-    #banner-icon {
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      fill: yellow;
-      filter: drop-shadow(0 0 2px black);
-    }
-
-    /* Botón cerrar */
-    #banner-close {
-      position: absolute;
-      top: 12px;
-      right: -130px;
-      background: transparent;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      font-weight: bold;
-      cursor: pointer;
-      text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-      user-select: none;
-    }
-
-    #banner-close:hover,
-    #banner-close:focus {
-      color: #ffeb3b;
-      outline: none;
-    }
   </style>
 </head>
 <body>
@@ -346,23 +270,7 @@
   
   
   
-   <!-- Banner -->
-  <div id="banner-aviso" role="alert" aria-live="assertive" aria-labelledby="banner-title" aria-describedby="banner-desc">
-    <button id="banner-close" aria-label="Cerrar aviso">&times;</button>
-    <div id="banner-content">
-      <!-- Icono de aviso temporal -->
-      <svg id="banner-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M1 21h22L12 2 1 21zm12-3h-2v2h2v-2zm0-8h-2v6h2v-6z"/>
-      </svg>
-      <div>
-        <h2 id="banner-title" style="margin: 0; font-size: 1.8rem; font-weight: 700; text-shadow: 2px 2px 4px black;">Aviso importante</h2>
-        <p id="banner-desc">
-          Esta aplicación está en modo prueba, viendo la eficiencia de uso será anexionada al conversor por lo tanto estará temporal.
-        </p>
-      </div>
-    </div>
-  </div>
-  
+
 
   <footer>
     &copy; 2026 EstamosFrito.com
